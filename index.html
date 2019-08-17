@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style>
+		.navbar li {
+			list-style-type: none; 
+		}
+		.navbar-brand { 
+			background-color: #00bbbb; 
+			color: #ffffff; 
+			padding: 10px; 
+			margin-left: 5%;
+			margin-right: 65%;
+			margin-bottom: 0px;
+			float: left;
+			font-size: large;
+			font-weight: bold;
+		}
+		.nav-link {
+			font-size: small;
+			color: #000000;
+		}
+		#mainpage {
+			background-color: #dddddd; 
+		}
+		#exampleimage {
+			float: left;
+			max-width: 65%;
+			max-height: 65%;
+			padding-right: 2em;
+			padding-top: 1em;
+		}
+		.copyright {
+			font-weight: bold;
+			text-align: center;
+			color: #ffffff;
+			background-color: #777777;
+			padding-top: 2em;
+			padding-bottom: 2em;
+			border-top: #009999 solid thick;
+		}
+		.header {
+			font-weight: bold;
+			font-size: 16pt;
+			color: #009999;
+			border-bottom: #dddddd solid thin;
+		}
+		.col {
+			margin-top: 2em;
+			background-color: white;
+			margin-bottom: 2em;
+			padding-left: 2em;
+			padding-right: 2em;
+			padding-top: 2em;
+			margin-bottom: 2em;
+		}
+		.firstcol {
+			margin-right: 2em;
+		}
+		.linkimage {
+			max-width: 45%;
+			max-height: 45%;
+		}
+	</style>
+<title>Bootstrap Visualization Dashboard </title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm">
+		<a class="navbar-brand" href="index.html">Lattitude </a>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Plots
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="visualization1.html">Max Temperature</a>
+				<a class="dropdown-item" href="visualization2.html">Humidity</a>
+				<a class="dropdown-item" href="visualization3.html">Cloudiness</a>
+				<a class="dropdown-item" href="visualization4.html">Wind Speed</a>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="comparision.html">Comparision</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="data.html">Data</a>
+		</li>
+	</nav>
+	<div id="mainpage">
+		<div class="container">
+			<div class="row">
+				<div class="col firstcol col-12 col-md-6">
+					<div class="header">
+						Summary: Latitude vs. X
+					</div>
+					<div>
+						<img id="exampleimage" src="./images/Fig1.png" />
+						The purpose of this project was to analyze how weather changes as you get closer to the equator.
+						To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+						<br />
+						After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+						Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
+						This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+					</div>
+				</div>
+				<div class="col col-12 col-md-4">
+					<div class="header">
+						Visualizations
+					</div>
+					<div>
+						<a href="visualization1.html"><img class="linkimage" src="./images/Fig1.png" /></a>
+						<a href="visualization2.html"><img class="linkimage" src="./images/Fig2.png" /></a>
+						<br />
+						<a href="visualization3.html"><img class="linkimage" src="./images/Fig3.png" /></a>
+						<a href="visualization4.html"><img class="linkimage" src="./images/Fig4.png" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			@Copyright Coding Bootcamp 2017
+		<div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
